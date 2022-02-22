@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	
+	int k, x;
+
+	scanf("%d%d", &k, &x);
+	--k;
+	if (0 <= x && x <= k)
+		printf("legal");
+	else
+		printf("out of bounds");
+
+	fclose(stdin);
+	fclose(stdout);
+}
